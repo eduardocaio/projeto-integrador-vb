@@ -9,20 +9,19 @@ public class ServDados {
     public static int getLuminosidade() {
         return luminosidade;
     }
-    public static void setLuminosidade(int luminosidade) {
+
+    public static void setDados(int luminosidade, float umidade, float temperatura) {
+        ServDados.temperatura = temperatura;
+        ServDados.umidade = umidade;
         ServDados.luminosidade = luminosidade;
     }
+
     public static float getTemperatura() {
         return temperatura;
     }
-    public static void setTemperatura(float temperatura) {
-        ServDados.temperatura = temperatura;
-    }
+
     public static float getUmidade() {
         return umidade;
-    }
-    public static void setUmidade(float umidade) {
-        ServDados.umidade = umidade;
     }
 
     public static String verificarUmidade(){
